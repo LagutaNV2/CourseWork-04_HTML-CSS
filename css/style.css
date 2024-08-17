@@ -8,9 +8,9 @@
     src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype");
   }
 
-* {
-    /* outline: solid 1px red; */
-}
+/* * {
+    outline: solid 1px red;
+} */
 
 * {
     margin: 0;
@@ -23,6 +23,8 @@ html {
 }
 
 body {
+    width: 100%;
+    background-color: white;
 	font-family: "OpenSans-Regular", sans-serif;
     text-transform: uppercase;
     color: white;
@@ -63,13 +65,17 @@ h5 {
 
 /* -------- page1 part1: BANNER+LOGO+NAV+TITLE ---------- */
 .header-container {
+    width: 100%;
+    max-width: 1650px;
+    height: 100%;
+    height: 450px;
+    margin: 0 auto;
     position: relative;
     text-align: center;
     background-image: url("../images/banner-bg.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-color: #000000;
     z-index: 0;
 }
 
@@ -87,11 +93,11 @@ h5 {
 
 .header-content {
     position: relative;
-    max-width: 1640px;
-    /* max-width: 100%; */
+    /* width: 100%; */
+    width: 1650px;
+    /* max-height: 100%; */
     height: 450px;
-    margin: 0 auto;
-    padding-right: 16%;
+    margin: 0 auto 0 auto;
 }
 
 .header__menu {
@@ -99,12 +105,18 @@ h5 {
     justify-content: space-between;
     align-items: center;
     padding-top: 25px;
+    padding-right: 16%;
+    padding-left: 16%;
 }
 
 .header__logo {
     height: 40px;
-    padding-left: 10rem;
-    /* position: relative; */
+    width: 180px;
+    /* height: 100%; */
+    background-image: url("../svg/noemi-logo.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     z-index: 1;
   }
 
@@ -135,22 +147,19 @@ h5 {
 
 .header__title {
     width: 54%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    max-width: 700px;
+    margin-left: 50%;
+    margin-top: 12%; /* 190/1650*/
+    /* position: absolute; */
     transform: translate(-50%,-50%);
     text-align: center;
-    margin: 0;
-    padding-top: 35px;
-
     font-family: "OpenSans-Bond";
     line-height: 4.8rem;
-    color: white;
 }
 
 /* -------- page1 part2 TRENDS ---------- */
 .trends-container {
-    max-width: 1640px;
+    max-width: 1650px;
     max-height: 450px;
     margin-top: 50px;
     margin-left: auto;
@@ -165,56 +174,74 @@ h5 {
 }
 
 .trends-content {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
 }
 
 .trend {
     position: relative;
-    width: 414px;
+    height: 310px;
+    display: flex;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: flex-end;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
-.trend:nth-child(n+2) {
-    margin-left: 4px;
+.garden {
+    background-image: url("../images/trend1.jpg");
+}
+
+.chees {
+    background-image: url("../images/trend2.jpg");
+}
+
+.mountins {
+    background-image: url("../images/trend3.jpg");
+}
+
+.limun {
+    background-image: url("../images/trend4.jpg");
 }
 
 .trend::before {
     content: '';
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.6);
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-}
-
-.trend__img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 .trend__info {
-    flex: 1 1 auto; /* элементы будут сжиматься и расширяться */
-   /* min-width: 98%;  минимальная ширина элемента */
-   /*  max-width: 100%; ограничивает ширину содержимого */
-
-    position: absolute;
-    box-sizing: border-box;
+    display: flex;
     padding: 38px 31px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    box-sizing: border-box;
+
     border: 3px solid #b59f5b;
     font-family: "OpenSans-Bold";
 }
 
 .trend__tags {
+    width: 98%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding: 0px;
-    margin: 0px 0px 10px;
+    padding: 0;
+    margin: 0 0 10px;
     list-style-type: none;
     font-size: 0.88rem;
     font-family: "OpenSans-Bold";
@@ -256,7 +283,7 @@ h5 {
     justify-content: center;
     width: 1165px;
     min-width: 897px;
-    margin: 60px auto 0px;
+    margin: 60px auto 0;
 }
 
 /* -------- page2 POSTS ---------- */
@@ -555,8 +582,6 @@ h5 {
 }
 
 .side-bar__themes-item {
-    /* height: 30px; */
-    /* gap: 5px; */
     width: 100%;
     border-bottom:1px solid #eeeeee;
 }

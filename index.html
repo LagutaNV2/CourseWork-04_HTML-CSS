@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +14,13 @@
                     <a href="#1" class="header__logo">
                         <!-- <img src="../svg/noemi-logo.svg" class="header__logo" alt="noemi-logo"> -->
                     </a>
-                    <nav>
-                        <div class="header__burger"></div>
+                    <nav class="head__nav">
+                        <div class="header__burger">
+                            <input type="checkbox" id="burger__checkbox" class="burger__checkbox">
+                            <label for="burger__checkbox" class="burger__btn">
+                                <span></span>
+                            </label>
+                        </div>
                         <ul class="header__list">
                             <li><a href="#1" class="header__menu-link">Главная</a></li>
                             <li><a href="#2" class="header__menu-link">Посты</a></li>
@@ -26,14 +31,16 @@
                         </ul>
                     </nav>
                 </div>
-                <h1 class="header__title">БЛОГ О ТВОРЧЕСТВЕ, СПОРТЕ И ОБРАЗЕ ЖИЗНИ</h1>
+                <div class="header__title">
+                    <h1>БЛОГ О ТВОРЧЕСТВЕ, СПОРТЕ И ОБРАЗЕ ЖИЗНИ</h1>
+                </div>
             </div>
         </div>
     </header>
 
     <section class="trends-container">
         <h2 class="title-page">сейчас в тренде</h2>
-            <div class="feature-line-65х3"></div>
+            <p class="feature-line-65х3"></p>
         <div class="trends-content">
 
             <div class="trend garden">
@@ -56,7 +63,8 @@
                         <li class="trend__tag"><a href="#0" class="tag-link">food</a></li>
                     </ul>
                     <h2 class="trend__title">
-                        <a href="#0" class="trend__link">Сыры на красивых картинках из интернета: какие они на вкус?</a>
+                        <a href="#0" class="trend__link">Сыры на красивых картинках из интернета: какие они на вкус?
+                            </a>
                     </h2>
                 </div>
             </div>
@@ -109,9 +117,16 @@
                         <div class="post-author"><strong>Неизвестный автор</strong></div>
                     </div>
                     <div class="post__text-container">
-                        <div class="post__text">
-                            <p>Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел,   запущены фонтаны города... Музеи еще закрыты. Что посмотреть?</p>
-                        </div>
+                        <!-- <div class="post__text"> -->
+                            <p class="post__text">Итак, вы в Питере. Раннее утро. Лед с рек
+                                 и каналов уже ушел,   запущены фонтаны города... Музеи еще закрыты. Что посмотреть?
+                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro quae rerum veritatis
+                                 pariatur, enim accusamus ea cupiditate qui modi facere!___finish_
+                                 22 Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел,   запущены фонтаны
+                                 города... Музеи еще закрыты. Что посмотреть? Lorem ipsum dolor sit amet consectetur,
+                                 adipisicing elit. Porro quae rerum veritatis pariatur, enim accusamus ea cupiditate
+                                 qui modi facere!___finish__</p>
+                        <!-- </div> -->
                     </div>
                 </div>
             </article>
@@ -133,10 +148,10 @@
                         <div class="post-author"><strong>Неизвестный автор</strong></div>
                     </div>
                     <div class="post__text-container">
-                        <div class="post__text">
-                            <p>Расскажем, какие упражнения выбрать и как сделать коврик для
-                            занятий йогой из того, что можно найти в шкафу.</p>
-                        </div>
+                        <p class="post__text">
+                            Расскажем, какие упражнения выбрать и как сделать коврик для
+                            занятий йогой из того, что можно найти в шкафу.
+                        </p>
                     </div>
                 </div>
             </article>
@@ -157,10 +172,10 @@
                         <div class="post-author"><strong>Неизвестный автор</strong></div>
                     </div>
                     <div class="post__text-container">
-                        <div class="post__text">
-                            <p>Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?</p>
-                            <p>Мы составили список лучших летних фестивалей по всему миру.</p>
-                        </div>
+                        <p class="post__text">
+                            Лето на носу, а с ним и музыкальные фестивали. На каком же из них мы разобьёте свою палатку?
+                            Мы составили список лучших летних фестивалей по всему миру.
+                        </p>
                     </div>
                 </div>
             </article>
@@ -208,11 +223,11 @@
                         <div class="post-author"><strong>Неизвестный автор</strong></div>
                     </div>
                     <div class="post__text-container">
-                        <div class="post__text">
-                            <p>Подушки для дивана целесообразнее заказать в съемных чехлах на молнии,
+                        <p class="post__text">
+                            Подушки для дивана целесообразнее заказать в съемных чехлах на молнии,
                                 если потребуется чистка подушек, проще снять чехлы,
-                                чем везти подушку     в химчистку.</p>
-                        </div>
+                                чем везти подушку     в химчистку.
+                        </p>
                     </div>
                 </div>
             </article>
@@ -222,7 +237,7 @@
         <div class="side-bar">
                 <section class="side-bar-last-posts">
                     <h4 class="side-bar__title">новые посты</h4>
-                    <div class="feature-line-65х3"></div>
+                    <p class="feature-line-65х3"></p>
 
                     <ul class="last-posts__list">
                         <li class="last-post__item">
@@ -285,15 +300,15 @@
                 </form>
 
                 <h4 class="side-bar__title">РАССЫЛКА</h4>
-                <div class="feature-line-65х3"></div>
+                <p class="feature-line-65х3"></p>
 
                 <form class="side-bar__subscribe">
-                    <input class="subscribe__input" type="mail" placeholder="Ваш email-адрес" required>
+                    <input class="subscribe__input" type="email" placeholder="Ваш email-адрес" required>
                     <button class="subscribe__btn" type="button">подписаться</button>
                 </form>
 
                 <h4 class="side-bar__title">ТЕГИ</h4>
-                <div class="feature-line-65х3"></div>
+                <p class="feature-line-65х3"></p>
                 <nav class="side-bar__tags">
                     <ul class="side-bar__tags-list">
                         <li class="side-bar__tags-item"><a href="#0" class="side-bar__tags-link">fashion</a></li>
@@ -308,7 +323,7 @@
                 </nav>
 
                 <h4 class="side-bar__title">ТЕМЫ</h4>
-                <div class="feature-line-65х3"></div>
+                <p class="feature-line-65х3"></p>
                 <div class="side-bar__categories">
                     <nav class="side-bar__themes">
                         <ul class="side-bar__themes-list">
@@ -340,16 +355,27 @@
 
     <section class="shop">
         <h2 class="title-page">НАШИ ИЗДЕЛИЯ</h2>
-        <div class="feature-line-65х3"></div>
+        <p class="feature-line-65х3"></p>
 
         <div class="shop-container">
 
             <article class="good-card">
-                <div class="good__img-wrapper">
-                    <img class="good__img" src="images/shop-item-desk1.jpg" alt="pillow">
+                <div class="good__img-wrapper good__img">
+                    <picture>
+                        <!-- <picture class="good__img"> -->
+                        <source media="(max-width:640px) and (orientation: portrait)"
+                           srcset="images/shop-item-mobile1.jpg">
+                        <source media="(min-width: 641px) and (max-width: 1200px) and (orientation: portrait),
+                                       (max-width:640px) and (orientation: landscape)"
+                            srcset="images/shop-item-tablet1.jpg">
+                        <source media="(min-width: 641px) and (max-width: 1200px) and (orientation: landscape), (min-width: 1201px)"
+                                srcset="images/shop-item-desk1.jpg">
+                        <img src="images/shop-item-mobile1.jpg" alt="pillow">
+                    </picture>
+                    <!-- <img class="good__img" src="images/shop-item-desk1.jpg" alt="pillow"> -->
                 </div>
                 <div class="good__info">
-                    <div class="good__title">Подушка на диван</div>
+                    <div class="good__title"><h3>Подушка на диван</h3></div>
                     <p class="good__description">Набор из двух подушек с модными принтами. Видео о создании
                         <a href="#0" class="good__link">здесь</a>.</p>
                     <div class="good_basket">
@@ -363,11 +389,22 @@
             </article>
 
             <article class="good-card">
-                <div class="good__img-wrapper">
-                    <img class="good__img" src="images/shop-item-desk2.jpg" alt="toy">
+                <div class="good__img-wrapper good__img">
+                    <picture>
+                    <!-- <picture class="good__img"> -->
+                        <source media="(max-width:640px) and (orientation: portrait)"
+                           srcset="images/shop-item-mobile2.jpg">
+                        <source media="(min-width: 641px) and (max-width: 1200px) and (orientation: portrait),
+                                (max-width:640px) and (orientation: landscape)"
+                            srcset="images/shop-item-tablet2.jpg">
+                        <source media="(min-width: 641px) and (max-width: 1200px) and (orientation: landscape), (min-width: 1201px)"
+                                srcset="images/shop-item-desk2.jpg">
+                        <img src="images/shop-item-mobile2.jpg" alt="pillow">
+                    </picture>
+                    <!-- <img class="good__img" src="images/shop-item-desk2.jpg" alt="toy"> -->
                 </div>
                 <div class="good__info">
-                    <div class="good__title">кукла «Зайчик»</div>
+                    <div class="good__title"><h3>кукла «Зайчик»</h3></div>
                     <p class="good__description">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена
                         <a href="#0" class="good__link">весенняя серия постов</a>
                         в блоге и несколько подкатов.
@@ -383,11 +420,22 @@
             </article>
 
             <article class="good-card">
-                <div class="good__img-wrapper">
-                    <img class="good__img" src="images/shop-item-desk3.jpg" alt="pillow">
+                <div class="good__img-wrapper good__img">
+                    <picture>
+                        <!-- <picture class="good__img"> -->
+                        <source media="(max-width:640px) and (orientation: portrait)"
+                           srcset="images/shop-item-mobile3.jpg">
+                        <source media="(min-width: 641px) and (max-width: 1200px) and (orientation: portrait),
+                                (max-width:640px) and (orientation: landscape)"
+                            srcset="images/shop-item-tablet3.jpg">
+                        <source media="(min-width: 641px) and (max-width: 1200px) and (orientation: landscape), (min-width: 1201px)"
+                                srcset="images/shop-item-desk1.jpg">
+                        <img src="images/shop-item-mobile3.jpg" alt="pillow">
+                    </picture>
+                    <!-- <img class="good__img" src="images/shop-item-desk3.jpg" alt="pillow"> -->
                 </div>
                 <div class="good__info">
-                    <div class="good__title">шестиугольная рамка</div>
+                    <div class="good__title"><h3>шестиугольная рамка</h3></div>
                     <p class="good__description">Необычная рамка для украшения дома из видео
                         <a href="#0" class="good__link">«Как сделать рамку из подручных средств за 30 минут»</a>
                     </p>
@@ -408,23 +456,26 @@
 
 
     <footer class="footer">
-        <adress class="social">
-            <a href="#0"><img src="svg/001-pinterest.svg" alt="pinterset" class="social-link"></a>
-            <a href="#0"><img src="svg/002-facebook-logo.svg" alt="facebook" class="social-link"></a>
-            <a href="#0"><img src="svg/003-tumblr.svg" alt="tumblr" class="social-link"></a>
-            <a href="#0"><img src="svg/004-twitter.svg" alt="twitter" class="social-link"></a>
-            <a href="#0"><img src="svg/005-instagram.svg" alt="insta" class="social-link"></a>
-        </adress>
-        <p class="footer__copyright">Copyright © 2009–2019 City Blog LLC.</p>
+        <div class="social">
+            <div class="wrapper-social-link">
+                <a href="#0"><img src="svg/001-pinterest.svg" alt="pinterset" class="social-link"></a>
+                <a href="#0"><img src="svg/002-facebook-logo.svg" alt="facebook" class="social-link"></a>
+                <a href="#0"><img src="svg/003-tumblr.svg" alt="tumblr" class="social-link"></a>
+                <a href="#0"><img src="svg/004-twitter.svg" alt="twitter" class="social-link"></a>
+                <a href="#0"><img src="svg/005-instagram.svg" alt="insta" class="social-link"></a>
+            </div>
+        </div>
+        <div class="footer__copyright">Copyright © 2009–2019 City Blog LLC.</div>
     </footer>
 
     <div class="popup _hidden">
         <div class="popup__form">
-            <div class="popup__close"></div>
+            <div class="popup__close">
+            </div>
             <div class="popup__conteiner">
                 <div class="popup__content">
                     <h3 class="popup__title">ВАШ ФИДБЕК</h3>
-                    <div class="feature-line-65х3"></div>
+                    <p class="feature-line-65х3"></p>
                     <div class="question">Как часто Вы заходите на сайт?</div>
                     <select class="select">
                         <option selected>Почти каждый день</option>
@@ -452,6 +503,8 @@
                 </div>
             </div>
         </div>
+    </div>
+
 
 </body>
 </html>
